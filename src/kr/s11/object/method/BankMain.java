@@ -33,6 +33,8 @@ class Account{
 	public void withdraw(int money) {
 		if(money <= 0) {
 			System.out.println("출금액은 0보다 크게 입력하세요.");
+		}else if(balance < money) {
+			System.out.println("잔액이 부족합니다.");
 		}else {
 			balance -= money;
 		}
