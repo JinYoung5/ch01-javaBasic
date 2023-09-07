@@ -10,6 +10,9 @@ import java.util.Scanner;
  * 				   예금 처리 후 "입금이 완료 되었습니다" 출력
  * 				 2.출금하기
  * 
+ * 
+ * 
+ *   "홍길동님 입금이 완료되었습니다" 출력
  * 2)while문을 만들고 메뉴 지정
  *   1.예금, 2.출금 3.잔고 확인, 4.종료
  */
@@ -26,7 +29,8 @@ class Account{
 		if(money <= 0) {
 			System.out.println("입금액은 0보다 크게 입력하세요.");
 		}else {
-				balance += money;
+				balance += money; //누적
+				System.out.println("입금이 완료되었습니다.");
 		}
 	}
 	//출금하기
@@ -36,7 +40,8 @@ class Account{
 		}else if(balance < money) {
 			System.out.println("잔액이 부족합니다.");
 		}else {
-			balance -= money;
+			balance -= money; //차감
+			System.out.println("출금이 완료되었습니다.");
 		}
 	}
 	//계좌정보출력
