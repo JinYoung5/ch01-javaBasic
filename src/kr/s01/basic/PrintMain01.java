@@ -19,5 +19,4 @@ public class PrintMain01 {
 		System.out.print("겨울");
 		*/		
 	}
-	
 }
