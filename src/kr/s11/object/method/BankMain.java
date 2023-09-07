@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 1)멤버 변수 : 계좌번호(account_num), 예금주(name),잔고(balance)
  * 2) 멤버 메서드 : 1.예금하기(depostie) : balance에 값 누적
  * 				   예금 처리 후 "입금이 완료 되었습니다" 출력
- * 				  
+ * 				 2.출금하기
  * 
  * 2)while문을 만들고 메뉴 지정
  *   1.예금, 2.출금 3.잔고 확인, 4.종료
@@ -23,11 +23,19 @@ class Account{
 	//멤버 메서드
 	//예금하기
 	public void deposite(int money) {
-		balance += money;
+		if(money <= 0) {
+			System.out.println("입금액은 0보다 크게 입력하세요.");
+		}else {
+				balance += money;
+		}
 	}
 	//출금하기
 	public void withdraw(int money) {
-		balance -= money;
+		if(money <= 0) {
+			System.out.println("출금액은 0보다 크게 입력하세요.");
+		}else {
+			balance -= money;
+		}
 	}
 	//계좌정보출력
 	public void printAccount() {
