@@ -55,6 +55,5 @@ public class StudentMain {
 		System.out.println("총점 : " + st2.getTotal());
 		System.out.println("평균 : " + st2.getAverage());
 		
-		
 	}
 }
