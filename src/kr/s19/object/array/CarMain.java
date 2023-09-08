@@ -51,8 +51,12 @@ public class CarMain {
 		for(int i=0;i<carArray.length;i++) {
 			System.out.println("carArray["+i+"]: 색상->" 
 					+ carArray[i].getColor() 
-					+ ",스피드->" + carArray[i].getSpeed());
-
+					+ ", 스피드->" + carArray[i].getSpeed());
+		}
+		System.out.println("-------------");
+		for(Car car : carArray) {
+			System.out.println("생삭 : " + car.getColor()
+			+ ", 스피드 : " + car.getSpeed());
 		}
 
 	}
