@@ -5,6 +5,7 @@ class Car2{
 	String gearType;
 	int door;
 
+	//생성자 오버로딩
 	public Car2 () {}
 	
 	public Car2 (String c, String g, int d) {
