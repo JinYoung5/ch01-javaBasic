@@ -21,6 +21,14 @@ public class BookMain {
 		}
 		System.out.printf("책 가격의 합 : %,d원%n", total);
 		
+		System.out.println("-----------------");
 		
+		//확장 for문을 이용한 출력
+		for(Book book : bookArray) {
+			System.out.printf("%s\t", book.getCategory());
+			System.out.printf("%s\t", book.getName());
+			System.out.printf("%,d원\t", book.getPrice());
+			System.out.printf("%.2f%%%n", book.getDiscount());
+		}
 	}
 }
