@@ -17,6 +17,8 @@ public class StringMain01 {
 		//문자열 비교
 		if(str1.equals(str2)) {
 			System.out.println("str1의 내용(문자열)과 str2의 내용(문자열)이 같다");
+		}else {
+			System.out.println("str1의 내용(문자열)과 str2의 내용(문자열)이 다르다.");
 		}
 	}
 }
