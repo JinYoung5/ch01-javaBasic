@@ -13,18 +13,18 @@ class Point{
 }
 //자식클래스
 class Point3D extends Point{
-	int z;
+	int a;
 	
 	public Point3D(int x, int y, int z) {
 		super(x,y);
 		
-		this.z = z;
+		this.a = a;
 	}
 	
 	//메서드 오버라이딩
 	@Override
 	public String getLocation() {
-		return "x:" + x + ",y:" + y + ",z:" + z;
+		return "x:" + x + ",y:" + y + ",a:" + a;
 	}
 }
 
@@ -34,7 +34,6 @@ public class SuperMain06 {
 		Point3D p3 = new Point3D(1,2,3);
 		//getLocation 메서드 호출
 		p3.getLocation();
-		
 		
 	}
 }
