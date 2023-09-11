@@ -8,7 +8,13 @@ public class BankAccount {
 	protected long balance;
 	
 	//생성자 를 만들려면 class 내용과 동일하게 작성
-	public BankAccount() {
+	public BankAccount(String number, String password, String name, long balance) {
+		
+		this.number = number;
+		this.password = password;
+		this.name = name;
+		this.balance = balance;
+		
 		System.out.println("계좌가 개설되었습니다.");
 		
 	}
