@@ -20,5 +20,12 @@ public class StringMain01 {
 		}else {
 			System.out.println("str1의 내용(문자열)과 str2의 내용(문자열)이 다르다.");
 		}
+		
+		System.out.println("---------------------------------");
+		
+		//명시적 객체 생성
+		//멍시적으로 객체 생성하면 같은 문자열을 사용해도 각각 새로운 객체를 생성(공유하지 않음)
+		String str3 = new String("Hello");
+		String str4 = new String("Hello");
 	}
 }
