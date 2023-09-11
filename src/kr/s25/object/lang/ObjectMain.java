@@ -12,5 +12,7 @@ public class ObjectMain {
 	System.out.println(Integer.toHexString(om.hashCode()));
 	//참조값 반환
 	System.out.println(om.toString());
+	System.out.println(om);
+	
 	}
 }
