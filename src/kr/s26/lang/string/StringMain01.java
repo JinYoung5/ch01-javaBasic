@@ -10,7 +10,8 @@ public class StringMain01 {
 		//객체 비교
 		if(str1 == str2) {
 			System.out.println("str1과 str2는 같은 객체");
-			
+		}else {
+			System.out.println("str1과 str2는 다른 객체");
 		}
 		
 	}
