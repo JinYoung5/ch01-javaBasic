@@ -35,5 +35,6 @@ public class SuperMain06 {
 		//getLocation 메서드 호출
 		p3.getLocation();
 		
+		
 	}
 }
