@@ -34,5 +34,12 @@ public class StringMain01 {
 		}else {
 			System.out.println("str3와 str4는 다른 객체");
 		}
+		
+		//문자열 비교
+		if(str3.equals(str4)) {
+			System.out.println("str3의 내용(문자열)과 str4의 내용(문자열)이 같다.");
+		}else {
+			System.out.println("str3의 내용(문자열)과 str4의 내용(문자열)이 다르다.");
+		}
 	}
 }
