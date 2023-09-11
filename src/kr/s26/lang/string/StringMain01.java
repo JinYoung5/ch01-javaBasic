@@ -6,5 +6,12 @@ public class StringMain01 {
 		//암시적으로 객체를 생성할 때 문자열이 같으면 같은 객체를 공유
 		String str1 = "abc";
 		String str2 = "abc";
+		
+		//객체 비교
+		if(str1 == str2) {
+			System.out.println("str1과 str2는 같은 객체");
+			
+		}
+		
 	}
 }
