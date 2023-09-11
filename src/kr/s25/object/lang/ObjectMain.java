@@ -12,6 +12,7 @@ public class ObjectMain {
 	System.out.println(Integer.toHexString(om.hashCode()));
 	//참조값 반환
 	System.out.println(om.toString());
+	//참조변수를 호출하면 자동적으로 toString()메서드가 동작해서 참조값을 반환
 	System.out.println(om);
 	
 	}
