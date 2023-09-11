@@ -28,15 +28,12 @@ class Point3D extends Point{
 	}
 }
 
-class Point3D2 extends point{
-	super(0,0);
-}
-
 public class SuperMain06 {
 	public static void main(String[] args) {
 		//객체 선언 및 생성
-		Point pt = new Point(0,0);
+		Point3D p3 = new Point3D(1,2,3);
 		//getLocation 메서드 호출
-		super
+		p3.getLocation();
+		
 	}
 }

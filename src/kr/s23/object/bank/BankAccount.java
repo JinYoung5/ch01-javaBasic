@@ -18,18 +18,7 @@ public class BankAccount {
 		System.out.println("계좌가 개설되었습니다.");
 		
 	}
-	public void setNumber(String number) {
-		this.number = number;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public void setBalance(long balance) {
-		this.balance = balance;
-	}
+	
 	//입금 하기
 	// public void 문에서 System.out.println("!!!"); 다음에 return은 생략되어 있다.
 	public void deposit(long amount) {

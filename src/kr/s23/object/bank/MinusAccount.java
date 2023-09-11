@@ -3,10 +3,14 @@ package kr.s23.object.bank;
 public class MinusAccount extends BankAccount {
 	private long minusLimit;
 
-	public void setMinusLimit(long minusLimit) {
+	//생성자
+	public MinusAccount(String number, String password, String name, long balance, long minusLimit) {
+		//BankAccount 부모클래스의 인자가 있는 생성자를 호출
+		super(number,password,name,balance);
 		this.minusLimit = minusLimit;
+
 	}
-	
+
 	//메서드 오버라이딩(재정의)
 	@Override
 	public void withdraw(long amount) {

@@ -3,12 +3,8 @@ package kr.s23.object.bank;
 public class BankMain {
 	public static void main(String[] args) {
 		//일반 계좌 생성
-		BankAccount bank = new BankAccount(); 
-		bank.setNumber("100-123");	//계좌번호
-		bank.setPassword("1234");	//비밀번호
-		bank.setName("홍글동");		//이름
-		bank.setBalance(10000L);	//잔고
-		
+		BankAccount bank = new BankAccount("100-123","1234","홍길동",10000L); 
+	
 		//계좌 정보 출력
 		bank.printAccount();
 		//입금 하기
@@ -23,13 +19,8 @@ public class BankMain {
 		System.out.println("===========================");
 		
 		//마이너스 계좌 생성
-		MinusAccount ma = new MinusAccount();
-		ma.setNumber("123-101");
-		ma.setPassword("5432");
-		ma.setName("박문수");
-		ma.setBalance(10000L);
-		ma.setMinusLimit(1000L);
-		
+		MinusAccount ma = new MinusAccount("123-101","5432","박문수",10000L,1000L);
+
 		//마이너스 계좌 정보 출력
 		ma.printAccount();
 		
