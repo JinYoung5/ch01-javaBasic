@@ -30,5 +30,13 @@ public class StringMain03 {
 		//지정한 문자열로 시작할 경우 true 반환
 		f = s2.startsWith("ab");
 		System.out.println("f:"+f);
+		
+		//지정한 문자열로 끝나는 경우 true 반환
+		f = s2.endsWith("bc");
+		System.out.println("f:"+f);
+		
+		//int -> String
+		msg = String.valueOf(a);
+		msg = a + ""; //빈문자열
 	}
 }
