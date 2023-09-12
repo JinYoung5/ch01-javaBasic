@@ -32,7 +32,7 @@ public class ScoreMain {
 			System.out.print("수학>");
 			int math = input.nextInt();
 
-			input.nextLine(); //오동작 엔터 흡수
+			input.nextLine(); //오동작 엔터 흡수  (마지막 math 부분의 input.nextInt()에서 엔터가 없어질수 있게 하는 장치)
 
 			scoreArray[i] = new Score(name,korean,english,math);
 			System.out.println("--------------------");

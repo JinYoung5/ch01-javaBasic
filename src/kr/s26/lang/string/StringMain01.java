@@ -32,6 +32,7 @@ public class StringMain01 {
 		if(str3 == str4) {
 			System.out.println("str3와 str4는 같은 객체");
 		}else {
+			
 			System.out.println("str3와 str4는 다른 객체");
 		}
 		
@@ -40,6 +41,18 @@ public class StringMain01 {
 			System.out.println("str3의 내용(문자열)과 str4의 내용(문자열)이 같다.");
 		}else {
 			System.out.println("str3의 내용(문자열)과 str4의 내용(문자열)이 다르다.");
+		}
+		System.out.println("-----------------------------------");
+		
+		String str5 = "bus";
+		String str6 = "BUS";
+		
+		//대소문자를 구분하지 않고 문자열 비교
+		if(str5.equalsIgnoreCase(str6)) {
+			System.out.println("[대소문자 구분 없이 비교]str5와 str6의 문자열은 같다");
+		}else {
+			System.out.println("[대소문자 구분 없이 비교]str5와 str6의 문자열은 다르다");
+			
 		}
 	}
 }

@@ -8,6 +8,8 @@ public class ObjectMain {
 	System.out.println(om.getClass());
 	//클래스명 반환
 	System.out.println(om.getClass().getName());
+	//해쉬코드 반환
+	System.out.println(om.hashCode());
 	//해시코드를 16진수로 변환
 	System.out.println(Integer.toHexString(om.hashCode()));
 	//참조값 반환
