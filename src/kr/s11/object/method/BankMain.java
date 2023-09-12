@@ -93,7 +93,6 @@ public class BankMain {
 			}else {
 				System.out.println("잘못 입력했습니다.");
 			}
-
 		}
 
 		input.close();
