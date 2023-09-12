@@ -20,8 +20,8 @@ public class PolyMain03 {
 		
 		System.out.println("--------------");
 		
-		Parent2 p = ch;
-		p.make();
+		Parent2 p = ch; //자식클래스타입 -> 부모클래스타입 형변환 : 업캐스팅, 자동적으로 형변환
+		p.make(); //재정의된 메서드 호출
 		
 	}
 }
