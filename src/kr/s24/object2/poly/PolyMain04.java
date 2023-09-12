@@ -37,6 +37,16 @@ class Computer extends Product{
 		return "Computer";
 	}
 }
+class Audio extends Product{
+	public Audio() {
+		super(300);	 //Audio의 가격
+	}
+	//메서드 오버라이딩(재정의)
+	@Override
+	public String getName() {
+		return "Audio";
+	}
+}
 
 class Buyer{
 	private int money = 1000;//구매자 보유 금액
@@ -55,7 +65,6 @@ class Buyer{
 		System.out.println(p.getName() + "을/를 구입하셨습니다.");
 		System.out.println("현재 남은 돈은 " + money + "만원입니다.");
 		System.out.println("현재 보너스 점수는 " + bonusPoint + "점입니다.");
-
 	}
 }
 
@@ -64,12 +73,13 @@ public class PolyMain04 {
 		Buyer b = new Buyer();
 		Tv tv = new Tv();
 		Computer com = new Computer();
-		
+		Audio au = new Audio();
+
 		//Tv를 구매
 		b.buy(tv); //Tv -> Product 형변환
 		//Computer를 구매
 		b.buy(com); //Computer -> Product 형변환
-		
-		
+		//Audio를 구매
+		b.buy(au); //Audio -> Product 형변환
 	}
 }
