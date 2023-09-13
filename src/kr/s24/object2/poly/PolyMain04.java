@@ -11,7 +11,7 @@ class Product{
 		bonusPoint = price/10;
 	}
 
-	//제품의 이름을 반환
+	//제품의 이름을 반환  //재정의가 되어있을 때만 자식클래스쪽에 명시가능. 
 	public String getName() {
 		return "상품";
 	}
@@ -53,7 +53,7 @@ class Buyer{
 	private int bonusPoint = 0;//보너스 점수
 
 	//상품구매
-	public void buy(Product p) {
+	public void buy(Product p) {  //Product 말고 Tv를 넣으면 Tv만 사는것으로 간주. Computer,Audio등이 나오지 않음.
 		if(money < p.price) {
 			System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
 			return;
