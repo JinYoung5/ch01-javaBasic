@@ -24,6 +24,7 @@ public class CalendarMain01 {
 		int amPm = today.get(Calendar.AM_PM); //오전 0, 오후 1
 		String str = amPm == Calendar.AM ?"오전" : "오후";
 		
+		//0~11, 정오와 저정은 12 아니라 0으로 표시 됨
 		int hour = today.get(Calendar.HOUR); //12시: HOUR / 24시 : HOUR_OF_DAY
 		int min = today.get(Calendar.MINUTE);//분
 		int sec = today.get(Calendar.SECOND);//초

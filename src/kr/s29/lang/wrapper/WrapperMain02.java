@@ -12,6 +12,5 @@ public class WrapperMain02 {
 		int result2 = obj1 + obj2; //auto unboxing
 		System.out.println(result2);
 		
-		
 	}
 }

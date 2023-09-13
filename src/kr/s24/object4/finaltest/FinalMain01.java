@@ -2,7 +2,7 @@ package kr.s24.object4.finaltest;
 
 class A{
 	//지정한 값은 변경 불가능
-	final int NUM = 10;
+	final int NUM = 10; //상수(대문자로 표기)
 	public static final int NUMBER = 20;
 	
 }
