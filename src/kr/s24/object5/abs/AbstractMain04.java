@@ -39,7 +39,5 @@ public class AbstractMain04 extends AbsEx2{
 		ab.play();
 		ab.take();
 		ab.sound();
-		
-		
 	}
 }
